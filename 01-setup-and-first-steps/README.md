@@ -393,6 +393,7 @@ That's it for getting started! As you become comfortable, you can explore additi
 | Command | What It Does |
 |---------|--------------|
 | `/agent` | Browse and select from available agents |
+| `/app` | Open the GitHub app or a browser fallback for the current repository |
 | `/env` | Show loaded environment details — what instructions, MCP servers, skills, agents, and plugins are active |
 | `/init` | Initialize Copilot instructions for your repository |
 | `/mcp` | Manage MCP server configuration |
@@ -463,6 +464,7 @@ That's it for getting started! As you become comfortable, you can explore additi
 | `/changelog` | Display changelog for CLI versions |
 | `/feedback` | Submit feedback to GitHub |
 | `/help` | Show all available commands |
+| `/settings` | Open an interactive dialog to browse and edit all user settings in one place |
 
 ### Quick Shell Commands
 
