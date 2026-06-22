@@ -185,6 +185,8 @@ copilot --agent python-reviewer
 
 > 💡 **Switching agents**: You can switch to a different agent at any time by using `/agent` or `--agent` again. To return to the standard Copilot CLI experience, use `/agent` and select **no agent**.
 
+> 🔒 **Agent mode is session-scoped**: When you start a new session, clear the conversation, or switch sessions, Copilot resets to the default mode — your chosen agent does not carry over automatically. This keeps things predictable: every new session starts fresh.
+
 ---
 
 # Going Deeper with Agents
