@@ -267,6 +267,17 @@ copilot
 > /login
 ```
 
+### Diagnosing session issues
+
+If something unexpected is happening in a session (commands not responding, tools misbehaving), the `/diagnose` command analyzes your session logs and summarizes what went wrong:
+
+```bash
+copilot
+> /diagnose
+```
+
+Copilot will review the session logs and explain any errors or anomalies it finds.
+
 ### Still stuck?
 
 - Check the [GitHub Copilot CLI documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli)
