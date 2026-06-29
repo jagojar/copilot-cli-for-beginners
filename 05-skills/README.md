@@ -476,9 +476,15 @@ Discover installed skills, find community skills, and share your own.
 
 ---
 
-## Managing Skills with the `/skills` Command
+## Managing Skills
 
-Use the `/skills` command to manage your installed skills:
+There are two ways to manage your installed skills: the `/skills` command inside the Copilot chat, and the `copilot skill` subcommand directly from your terminal. Both give you the same capabilities — use whichever feels more natural.
+
+> 💡 **`/skill` shorthand**: Inside the Copilot chat, `/skill` and `/skills` are aliases for each other. You can use either one.
+
+### Inside Copilot Chat (`/skills`)
+
+Use the `/skills` command (or its alias `/skill`) to manage skills without leaving a session:
 
 | Command | What It Does |
 |---------|--------------|
@@ -487,6 +493,21 @@ Use the `/skills` command to manage your installed skills:
 | `/skills add <name>` | Enable a skill (from a repository or marketplace) |
 | `/skills remove <name>` | Disable or uninstall a skill |
 | `/skills reload` | Reload skills after editing SKILL.md files |
+
+### From Your Terminal (`copilot skill`)
+
+The `copilot skill` subcommand lets you manage skills directly from your shell — no need to open a chat session first. This is useful for scripts, onboarding automation, or when you want to quickly add a skill to a project:
+
+```bash
+# List all currently installed skills
+copilot skill list
+
+# Add a skill from a file, URL, or directory
+copilot skill add .github/skills/security-audit
+
+# Remove a skill by name
+copilot skill remove security-audit
+```
 
 > 💡 **Remember**: You don't need to "activate" skills for each prompt. Once installed, skills are **automatically triggered** when your prompt matches their description. These commands are for managing which skills are available, not for using them.
 
