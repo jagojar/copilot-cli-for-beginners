@@ -444,7 +444,7 @@ That's it for getting started! As you become comfortable, you can explore additi
 | `/resume` | Switch to a different session (optionally specify session ID or name) |
 | `/rename` | Rename the current session (omit the name to auto-generate one) |
 | `/rewind` | Open a timeline picker to roll back to any earlier point in the conversation |
-| `/usage` | Display session usage metrics and statistics, including quota progress bars |
+| `/usage` | Display session usage metrics and statistics, including quota progress bars and plan budget details |
 | `/session` | Show session info and workspace summary; use `/session delete`, `/session delete <id>`, or `/session delete-all` to remove sessions |
 | `/share` | Export session as a markdown file, GitHub gist, or self-contained HTML file |
 
@@ -452,7 +452,7 @@ That's it for getting started! As you become comfortable, you can explore additi
 
 | Command | What It Does |
 |---------|--------------|
-| `/statusline` (or `/footer`) | Customize which items appear in the status bar at the bottom of the session (directory, branch, effort, context window, quota) |
+| `/statusline` (or `/footer`) | Customize which items appear in the status bar at the bottom of the session (directory, branch, effort, context window, quota, plan budget) |
 | `/theme` | View or set terminal theme |
 | `/voice` | Dictate your prompt using local speech-to-text — speak naturally instead of typing |
 
@@ -486,10 +486,10 @@ Copilot CLI supports multiple AI models from OpenAI, Anthropic, Google, and othe
 copilot
 > /model
 
-# Shows available models and lets you pick one. Select Sonnet 4.5.
+# Shows available models and lets you pick one. Select Claude Sonnet 5 for the latest capabilities, or Sonnet 4.5 as a proven alternative.
 ```
 
-> 💡 **Tip**: Some models cost more "premium requests" than others. Models marked **1x** (like Claude Sonnet 4.5) are a great default. They're capable and efficient. Higher-multiplier models use your premium request quota faster, so save those for when you really need them.
+> 💡 **Tip**: Some models cost more "premium requests" than others. Models marked **1x** (like Claude Sonnet 4.5 and Claude Sonnet 5) are a great default. They're capable and efficient. Higher-multiplier models use your premium request quota faster, so save those for when you really need them.
 
 > 💡 **Not sure which model to pick?** Select **`Auto`** from the model picker to let Copilot automatically choose the best available model for each session. This is a great default if you're just getting started and don't want to think about model selection.
 
